@@ -9,15 +9,13 @@
       "outputs": ["{options.outputPath}"],
       "defaultConfiguration": "production",
       "options": {
-        "outputPath": "apps/the-globetrettor-challenge/.next"
+        "outputPath": ".next"
       },
       "configurations": {
         "development": {
-          "outputPath": "apps/the-globetrettor-challenge/.next"
+          "outputPath": ".next"
         },
-        "production": {
-          "outputPath": "apps/the-globetrettor-challenge/.next"
-        }
+        "production": {}
       }
     },
     "serve": {

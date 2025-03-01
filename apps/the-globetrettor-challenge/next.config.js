@@ -19,7 +19,6 @@ const nextConfig = {
       },
     ],
   },
-  distDir: '.next',
 };
 
 const plugins = [
