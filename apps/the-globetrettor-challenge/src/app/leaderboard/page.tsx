@@ -31,7 +31,9 @@ const Leaderboard = () => {
   });
 
   const handleBack = () => router.push('/');
-  const handlePlayAgain = () => router.push('/game');
+  const handlePlayAgain = () => {
+    router.replace('/game');
+  };
 
   if (isLoading) {
     return (

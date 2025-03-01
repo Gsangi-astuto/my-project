@@ -49,12 +49,14 @@ export const useGameLogic = () => {
     data: newQuestion,
     isLoading,
     error,
+    refetch,
   } = useQuery<NewQuestionResponse>({
     queryKey: ['newQuestion', Array.from(gameState.usedQuestions)],
     queryFn: getNewQuestion,
     retry: 2,
     staleTime: 0,
     refetchOnWindowFocus: false,
+    enabled: !isGameOver, // Only fetch when game is not over
   });
 
   // Timer effect
@@ -220,7 +222,10 @@ export const useGameLogic = () => {
     setTimeLeft(GAME_DURATION);
     setIsGameOver(false);
     setShowSadEmoji(false);
-  }, []);
+    setIsPaused(false);
+    // Force refetch a new question
+    refetch();
+  }, [refetch]);
 
   const handlePause = () => {
     setIsPaused(true);
