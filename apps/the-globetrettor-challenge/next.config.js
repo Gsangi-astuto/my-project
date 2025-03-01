@@ -19,6 +19,7 @@ const nextConfig = {
       },
     ],
   },
+  distDir: process.env.VERCEL ? '/vercel/path0/.next' : '.next',
 };
 
 const plugins = [

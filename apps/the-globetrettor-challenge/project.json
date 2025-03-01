@@ -15,7 +15,9 @@
         "development": {
           "outputPath": ".next"
         },
-        "production": {}
+        "production": {
+          "outputPath": "${process.env.VERCEL ? '/vercel/path0/.next' : '.next'}"
+        }
       }
     },
     "serve": {
