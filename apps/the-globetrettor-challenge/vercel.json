@@ -1,5 +1,0 @@
-{
-  "buildCommand": "yarn nx build the-globetrettor-challenge",
-  "outputDirectory": "dist/apps/the-globetrettor-challenge",
-  "installCommand": "yarn install"
-}
