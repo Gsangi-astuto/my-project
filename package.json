@@ -3,7 +3,6 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "prepare": "[ -n \"$CI\" ] || husky install",
     "test": "echo \"No tests specified\" && exit 0",
     "serve:platform": "yarn nx serve the-globetrettor-challenge",
     "build:platform": "yarn nx build the-globetrettor-challenge",
@@ -70,7 +69,6 @@
     "eslint-plugin-playwright": "^1.6.2",
     "eslint-plugin-react": "7.35.0",
     "eslint-plugin-react-hooks": "5.0.0",
-    "husky": "^8.0.0",
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0",
     "jsdom": "~22.1.0",
