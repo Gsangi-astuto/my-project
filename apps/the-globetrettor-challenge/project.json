@@ -3,7 +3,39 @@
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "apps/the-globetrettor-challenge",
   "projectType": "application",
-  "tags": [],
-  "// targets": "to see all targets run: nx show project the-globetrettor-challenge --web",
-  "targets": {}
+  "targets": {
+    "build": {
+      "executor": "@nx/next:build",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "outputPath": "dist/apps/the-globetrettor-challenge"
+      },
+      "configurations": {
+        "development": {
+          "outputPath": "apps/the-globetrettor-challenge"
+        },
+        "production": {}
+      }
+    },
+    "serve": {
+      "executor": "@nx/next:server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "the-globetrettor-challenge:build",
+        "dev": true
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "the-globetrettor-challenge:build:development",
+          "dev": true
+        },
+        "production": {
+          "buildTarget": "the-globetrettor-challenge:build:production",
+          "dev": false
+        }
+      }
+    }
+  },
+  "tags": []
 }

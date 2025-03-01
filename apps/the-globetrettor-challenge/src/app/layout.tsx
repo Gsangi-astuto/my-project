@@ -1,4 +1,5 @@
 import './global.css';
+import ClientLayout from './components/ClientLayout';
 
 export const metadata = {
   title: 'Welcome to the-globetrettor-challenge',
@@ -12,7 +13,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <ClientLayout>{children}</ClientLayout>
+      </body>
     </html>
   );
 }
