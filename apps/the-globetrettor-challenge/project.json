@@ -10,14 +10,6 @@
       "defaultConfiguration": "production",
       "options": {
         "outputPath": ".next"
-      },
-      "configurations": {
-        "development": {
-          "outputPath": ".next"
-        },
-        "production": {
-          "outputPath": "${process.env.VERCEL ? '/vercel/path0/.next' : '.next'}"
-        }
       }
     },
     "serve": {

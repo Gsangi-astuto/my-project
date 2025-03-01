@@ -1,6 +1,5 @@
 {
   "framework": "nextjs",
-  "buildCommand": "cd ../.. && yarn install --frozen-lockfile && NODE_ENV=production yarn nx run the-globetrettor-challenge:build:production --outputPath=/vercel/path0/.next",
-  "installCommand": "cd ../.. && yarn install --frozen-lockfile",
+  "buildCommand": "cd ../.. && yarn install --frozen-lockfile && cd apps/the-globetrettor-challenge && npx next build",
   "outputDirectory": ".next"
 }
