@@ -83,6 +83,8 @@ export const useGameLogic = () => {
         options: newQuestion.options,
         currentQuestionToken: newQuestion.token,
         currentImage: newQuestion.imageUrl,
+        correctAnswer: null,
+        selectedAnswer: null,
       }));
     }
   }, [newQuestion]);
@@ -108,6 +110,8 @@ export const useGameLogic = () => {
         isAnswered: false,
         currentQuestionToken: newQuestion.token,
         currentImage: newQuestion.imageUrl,
+        correctAnswer: null,
+        selectedAnswer: null,
       });
     } catch (error) {
       console.error('Error fetching next question:', error);
