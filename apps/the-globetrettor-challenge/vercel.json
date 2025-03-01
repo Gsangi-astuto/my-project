@@ -1,6 +1,6 @@
 {
   "framework": "nextjs",
-  "buildCommand": "cd ../.. && yarn install --frozen-lockfile && yarn nx build the-globetrettor-challenge",
+  "buildCommand": "cd ../.. && yarn install --frozen-lockfile && yarn nx build the-globetrettor-challenge --prod",
   "installCommand": "cd ../.. && yarn install --frozen-lockfile",
-  "outputDirectory": "dist/apps/the-globetrettor-challenge"
+  "outputDirectory": ".next"
 }

@@ -9,14 +9,16 @@
       "outputs": ["{options.outputPath}"],
       "defaultConfiguration": "production",
       "options": {
-        "outputPath": "dist/apps/the-globetrettor-challenge",
+        "outputPath": ".next",
         "postcssConfig": "apps/the-globetrettor-challenge/postcss.config.js"
       },
       "configurations": {
         "development": {
-          "outputPath": "apps/the-globetrettor-challenge"
+          "outputPath": ".next"
         },
-        "production": {}
+        "production": {
+          "outputPath": ".next"
+        }
       }
     },
     "serve": {
