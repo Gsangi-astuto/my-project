@@ -22,9 +22,6 @@ const nextConfig = {
   },
   output: 'standalone',
   distDir: '.next',
-  experimental: {
-    outputFileTracingRoot: path.join(__dirname, '../../'),
-  },
 };
 
 const plugins = [
