@@ -1,0 +1,5 @@
+{
+  "buildCommand": "npx nx build the-globetrettor-challenge",
+  "outputDirectory": "dist/apps/the-globetrettor-challenge",
+  "installCommand": "npm install --force"
+}
