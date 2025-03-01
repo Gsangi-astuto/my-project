@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
+    "build": "nx build the-globetrettor-challenge",
     "test": "echo \"No tests specified\" && exit 0",
     "serve:platform": "yarn nx serve the-globetrettor-challenge",
     "build:platform": "yarn nx build the-globetrettor-challenge",

@@ -1,13 +1,11 @@
 //@ts-check
-
-// eslint-disable-next-line @typescript-eslint/no-var-requires
 const { composePlugins, withNx } = require('@nx/next');
+const path = require('path');
 
 /**
  * @type {import('@nx/next/plugins/with-nx').WithNxOptions}
  **/
 const nextConfig = {
-  distDir: '.next',
   nx: {
     // Set this to true if you would like to use SVGR
     // See: https://github.com/gregberge/svgr
@@ -21,6 +19,11 @@ const nextConfig = {
         hostname: 'images.unsplash.com',
       },
     ],
+  },
+  output: 'standalone',
+  distDir: '.next',
+  experimental: {
+    outputFileTracingRoot: path.join(__dirname, '../../'),
   },
 };
 

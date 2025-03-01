@@ -9,7 +9,8 @@
       "outputs": ["{options.outputPath}"],
       "defaultConfiguration": "production",
       "options": {
-        "outputPath": "dist/apps/the-globetrettor-challenge"
+        "outputPath": "dist/apps/the-globetrettor-challenge",
+        "postcssConfig": "apps/the-globetrettor-challenge/postcss.config.js"
       },
       "configurations": {
         "development": {
