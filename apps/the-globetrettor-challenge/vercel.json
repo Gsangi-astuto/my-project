@@ -1,5 +1,5 @@
 {
-  "buildCommand": "npx nx build the-globetrettor-challenge",
+  "buildCommand": "yarn nx build the-globetrettor-challenge",
   "outputDirectory": "dist/apps/the-globetrettor-challenge",
-  "installCommand": "npm install --force"
+  "installCommand": "yarn install --frozen-lockfile --ignore-scripts"
 }
